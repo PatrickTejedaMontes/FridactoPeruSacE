@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fridacto Perú SAC - Finos Acabados</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+               <a href="#inicio"><img src="/Src/assets/img/LogoFridacto2.png" alt="Logo Fridacto Perú SAC"> 
+                
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <!-- <li><a href="#inventario">Inventario</a></li> -->
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto" class="btn-contact">Contáctanos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+    <!-- Video de fondo -->
+    <video autoplay muted loop playsinline class="hero-video">
+        <source src="assets/mp4/bg3.mp4" type="video/mp4">
+        Tu navegador no soporta videos HTML5.
+    </video>
+
+    <!-- Overlay oscuro para contraste -->
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+        <h1>Fridacto Perú SAC</h1>
+        <p>Más de 15 años ofreciendo acabados de primera calidad, con personal especializado en la importación e instalación de piedras preciosas.</p>
+        <div class="hero-buttons">
+            <a href="#servicios" class="btn btn-primary">Nuestros Servicios</a>
+            <a href="#contacto" class="btn btn-secondary">Solicitar Cotización</a>
+        </div>
+    </div>
+</section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nuestros Servicios</h2>
+                <!-- <p>Especialistas en acabados de lujo con piedras preciosas y materiales de primera calidad</p> -->
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>Importación de Piedras</h3>
+                    <p>Importamos las mejores piedras preciosas del mundo para tus proyectos de acabado premium.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Instalación Especializada</h3>
+                    <p>Personal altamente capacitado para la instalación perfecta de tus acabados de lujo.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Acabados Residenciales</h3>
+                    <p>Transformamos tu hogar con acabados elegantes que reflejan tu estilo único.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Proyectos Comerciales</h3>
+                    <p>Acabados profesionales para hoteles, oficinas y espacios comerciales de alto nivel.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Diseño Personalizado</h3>
+                    <p>Creamos diseños únicos adaptados a tus necesidades y preferencias específicas.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Garantía Total</h3>
+                    <p>Respaldamos nuestro trabajo con garantías completas para tu tranquilidad.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+   <section id="galeria" class="section">
+  <div class="container">
+    <div class="section-title">
+      <h2>Galería de Proyectos</h2>
+      <p>Descubre algunos de nuestros trabajos más destacados</p>
+    </div>
+
+    <div class="gallery-grid">
+      <!-- Item 1 -->
+      <div class="gallery-item" onclick="openModal(1)">
+        <img src="assets/img/inventario1.jpg" alt="Proyecto Residencial 1">
+        <div class="gallery-overlay">Proyecto Residencial 1</div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="gallery-item" onclick="openModal(2)">
+        <img src="assets/img/inventario2.jpg" alt="Hotel de Lujo">
+        <div class="gallery-overlay">Hotel de Lujo</div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="gallery-item" onclick="openModal(3)">
+        <img src="assets/img/inventario3.jpg" alt="Oficina Corporativa">
+        <div class="gallery-overlay">Oficina Corporativa</div>
+      </div>
+        <!-- Item 3 -->
+      <div class="gallery-item" onclick="openModal(4)">
+        <img src="assets/img/inventario4.jpg" alt="Oficina Corporativa">
+        <div class="gallery-overlay">Oficina Corporativa</div>
+      </div>
+        <!-- Item 3 -->
+      <div class="gallery-item" onclick="openModal(5)">
+        <img src="assets/img/inventario5.jpg" alt="Oficina Corporativa">
+        <div class="gallery-overlay">Oficina Corporativa</div>
+      </div>
+        <!-- Item 3 -->
+      <div class="gallery-item" onclick="openModal(6)">
+        <img src="assets/img/inventario6.jpg" alt="Oficina Corporativa">
+        <div class="gallery-overlay">Oficina Corporativa</div>
+      </div>
+        <!-- Item 3 -->
+      <div class="gallery-item" onclick="openModal(7)">
+        <img src="assets/img/inventario7.jpg" alt="Oficina Corporativa">
+        <div class="gallery-overlay">Oficina Corporativa</div>
+      </div>
+        <!-- Item 3 -->
+      <div class="gallery-item" onclick="openModal(8)">
+        <img src="assets/img/inventario8.jpg" alt="Oficina Corporativa">
+        <div class="gallery-overlay">Oficina Corporativa</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Inventory/Dashboard Section -->
+    <!-- <section id="inventario" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Sistema de Gestión</h2>
+                <p>Administra inventario y facturación de manera eficiente</p>
+            </div>
+            <div class="dashboard-preview">
+                <div class="dashboard-header">
+                    <h3>Panel de Control</h3>
+                    <div class="dashboard-tabs">
+                        <button class="dashboard-tab active">Inventario</button>
+                        <button class="dashboard-tab">Facturación</button>
+                        <button class="dashboard-tab">Reportes</button>
+                    </div>
+                </div>
+                <div class="dashboard-content">
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-boxes"></i>
+                            </div>
+                            <h3>Control de Inventario</h3>
+                            <p>Gestiona el stock de piedras, herramientas y materiales en tiempo real.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-file-invoice-dollar"></i>
+                            </div>
+                            <h3>Sistema de Facturación</h3>
+                            <p>Genera facturas electrónicas y lleva control de pagos automáticamente.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <h3>Reportes y Analytics</h3>
+                            <p>Visualiza estadísticas de ventas, inventario y rendimiento del negocio.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- About Section -->
+    <section id="nosotros" class="section">
+        <div class="container">
+            <div class="section-title pb-0">
+                <h2>Nosotros</h2>
+               
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>15 Años de Excelencia</h3>
+                    <p>Fridacto Perú SAC se ha establecido como líder en el mercado de acabados de lujo en Perú. Nuestra experiencia de más de 15 años nos ha permitido perfeccionar nuestras técnicas y construir relaciones sólidas con proveedores internacionales de piedras preciosas.</p>
+                    <p>Nos especializamos en la importación directa de materiales premium y contamos con un equipo de instaladores altamente capacitados que garantizan resultados excepcionales en cada proyecto.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">500+</span>
+                            <span>Proyectos</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">15+</span>
+                            <span>Años</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span>Satisfacción</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">24/7</span>
+                            <span>Atención</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div style="background: linear-gradient(135deg, #1e3a5f, #f4c430); height: 400px; border-radius: 15px; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem;">
+                        <i class="fas fa-award" style="font-size: 4rem;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contacto</h2>
+                <p>¿Listo para comenzar tu proyecto? Contáctanos ahora</p>
+            </div>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+                <div class="form-group">
+                    <label for="servicio">Servicio de interés</label>
+                    <select id="servicio" name="servicio" required>
+                        <option value="">Seleccione un servicio</option>
+                        <option value="Importación de Piedras">Importación de Piedras</option>
+                        <option value="Instalación Especializada">Instalación Especializada</option>
+                        <option value="Acabados Residenciales">Acabados Residenciales</option>
+                        <option value="Proyectos Comerciales">Proyectos Comerciales</option>
+                        <option value="Diseño Personalizado">Diseño Personalizado</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos sobre tu proyecto..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <!--WSP-->
+
+    <a id="wsp-btn" class="wsp-float" target="_blank">
+    <img src="assets/img/wsp_float2.png" alt="WhatsApp">
+     </a>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Fridacto Perú SAC</h3>
+                    <p>Especialistas en acabados de lujo con más de 15 años de experiencia en el mercado peruano.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Servicios</h3>
+                    <ul style="list-style: none;">
+                        <li><a href="#" style="color: white; text-decoration: none;">Importación de Piedras</a></li>
+                        <li><a href="#" style="color: white; text-decoration: none;">Instalación Especializada</a></li>
+                        <li><a href="#" style="color: white; text-decoration: none;">Acabados Residenciales</a></li>
+                        <li><a href="#" style="color: white; text-decoration: none;">Proyectos Comerciales</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> San Isidro, Lima - Perú</p>
+                    <p><i class="fas fa-phone"></i> +51 XXX XXX XXX</p>
+                    <p><i class="fas fa-envelope"></i> info@fridacto.com</p>
+                </div>
+            </div>
+            <div style="text-align: center; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1);">
+                <p>&copy; 2024 Fridacto Perú SAC. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+<!-- MODAL DEL SERVICE -->
+<div id="serviceModal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+
+        <div class="modal-body">
+            <!-- Imagen -->
+            <div class="modal-img">
+                <img id="modalImage" src="" alt="Imagen servicio">
+            </div>
+
+            <!-- Texto -->
+            <div class="modal-text">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDescription"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL GALERIA -->
+<div id="galleryModal" class="modal2">
+  <div class="modal-content2">
+
+    <span class="close2" onclick="closeModal()">&times;</span>
+
+    <div class="carousel">
+      <button class="prev" id="prevBtn">&#10094;</button>
+
+      <div class="carousel-track" id="carouselTrack">
+        <!-- JS insertará las imágenes aquí -->
+      </div>
+
+      <button class="next2" id="nextBtn">&#10095;</button>
+    </div>
+
+    <p id="modalDesc"></p>
+  </div>
+</div>
+
+<!-- MODAL DE ALERTAS -->
+
+<!-- Modal Éxito -->
+<div id="exitoModal" class="modal-alert">
+  <div class="modal-alert-content success">
+    <h2>✔️ Mensaje enviado</h2>
+    <p>Nos pondremos en contacto contigo pronto.</p>
+    <button onclick="closeAlertModal()">Cerrar</button>
+  </div>
+</div>
+
+<!-- Modal Error -->
+<div id="errorModal" class="modal-alert">
+  <div class="modal-alert-content error">
+    <h2>❌ Error</h2>
+    <p>No se pudo enviar el mensaje. Intenta nuevamente.</p>
+    <button onclick="closeAlertModal()">Cerrar</button>
+  </div>
+</div>
+
+
+<script src="js/scripts.js"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  emailjs.init({
+    publicKey: "-cKtt1gyzjNPs0Uem"
+  });
+</script>
+</body>
+
+</html>
+
+    
+
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Dashboard tabs functionality
+        document.querySelectorAll('.dashboard-tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                document.querySelectorAll('.dashboard-tab').forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+
+       
+        // Gallery item hover effects
+        document.querySelectorAll('.gallery-item').forEach((item, index) => {
+    item.addEventListener('click', function() {
+        openModal(index + 1); // 👈 index+1 porque tus IDs empiezan en 1
+    });
+});
+
+        // Service cards animation on scroll
+        function animateOnScroll() {
+            const cards = document.querySelectorAll('.service-card');
+            cards.forEach(card => {
+                const cardTop = card.getBoundingClientRect().top;
+                const cardVisible = 150;
+                
+                if (cardTop < window.innerHeight - cardVisible) {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                } else {
+                    card.style.opacity = '0';
+                    card.style.transform = 'translateY(30px)';
+                }
+            });
+        }
+
+        // Initialize cards as hidden
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.service-card');
+            cards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            });
+        });
+
+        // Run animation on scroll
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+
+        // Mobile menu toggle (for future mobile implementation)
+        function toggleMobileMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('mobile-active');
+        }
+
+
+        // Inventory system demo functionality
+        const inventoryData = {
+            piedras: [
+                { nombre: 'Mármol Carrara', stock: 25, precio: 150 },
+                { nombre: 'Granito Negro', stock: 18, precio: 120 },
+                { nombre: 'Cuarzo Blanco', stock: 32, precio: 200 }
+            ],
+            facturacion: {
+                ventasHoy: 5,
+                ingresosMes: 15000,
+                clientesActivos: 45
+            }
+        };
+
+        // Update dashboard with sample data
+        function updateDashboard() {
+            console.log('Sistema de inventario cargado:', inventoryData);
+        }
+
+        // Initialize dashboard
+        document.addEventListener('DOMContentLoaded', updateDashboard);
+
+        // JS MODAL
+      
+
+
+  </script>
