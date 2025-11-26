@@ -577,8 +577,12 @@
             }
             .modal-body{
             flex-direction: column;
-            text-align: center;
-        }}
+            text-align: center;}
+            .logo img {
+            height: 85px; /* Reducir tamaño para móvil */
+            margin-top: 10px;
+            }
+        }
 
 .modal {
     display: none;

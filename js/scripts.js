@@ -163,3 +163,13 @@ function closeAlertModal() {
   document.getElementById("exitoModal").style.display = "none";
   document.getElementById("errorModal").style.display = "none";
 }
+
+
+    const toggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+
+    toggle.addEventListener("click", () => {
+        toggle.classList.toggle("active");
+        navLinks.classList.toggle("active");
+    });
+
